@@ -1,0 +1,55 @@
+/* قسم الهيرو */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f3f4f6;
+}
+
+/* يحتوي على النص والصورة */
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 900px;
+  width: 90%;
+  gap: 20px; /* مسافة بين النص والصورة في الشاشات الكبيرة */
+}
+
+/* النص */
+.main-content {
+  flex: 1;
+  text-align: left;
+}
+
+/* الصورة */
+.image img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* استجابة الشاشات الصغيرة */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    text-align: center;
+    justify-content:center;
+  }
+
+  .main-content {
+    margin-bottom: 5px; /* تقليل المسافة بين النص والصورة */
+    max-height: 400px;
+  }
+
+  .image {
+    margin-top: -1000px; /* إزالة أي مسافة إضافية */
+  }
+
+  .image img {
+    width: 170px; /* تصغير حجم الصورة قليلاً */
+    height: 170px;
+  }
+}

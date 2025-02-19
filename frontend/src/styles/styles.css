@@ -1,0 +1,29 @@
+/* الوضع الفاتح */
+body {
+    background-color: #ffffff;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* الوضع الداكن */
+  body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  /* زر التبديل */
+  .toggle-dark-mode {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .toggle-dark-mode:hover {
+    background-color: #666;
+  }
